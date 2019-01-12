@@ -1,0 +1,50 @@
+{
+  "name": "windowbuilder-subscriber",
+  "description": "Subscriber engine for windowbuilder project",
+  "version": "1.0.0",
+  "author": "Rostislav Poddorogin <poddorogin@ecookna.ru> (http://www.ecookna.ru)",
+  "license": "SEE LICENSE IN LICENSE.en.md",
+  "main": "index.js",
+  "engines": {
+    "node": "^8.8",
+    "npm": "^5.5"
+  },
+  "scripts": {
+    "start": "node ./index",
+    "debug": "node --inspect ./index",
+    "build": "node ./scripts/build",
+    "meta:prebuild": "node ./scripts/meta.prebuild",
+    "meta:link": "node ./scripts/meta.link"
+  },
+  "dependencies": {
+    "@koa/cors": "^2.2.1",
+    "koa": "^2.5.0",
+    "koa-better-router": "^2.1",
+    "md5-file": "^3.2.3",
+    "request": "^2.85.0",
+    "node-fetch": "^2.1.2",
+    "moment": "^2.22.2",
+    "pouchdb-adapter-http": "7.0.0",
+    "pouchdb-core": "7.0.0",
+    "pouchdb-find": "7.0.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.2",
+    "babel-loader": "^7.1.4",
+    "babel-plugin-syntax-object-rest-spread": "^6.13.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-node8": "^1.2.0",
+    "eslint": "^4.19.1",
+    "eslint-config-react-app": "^2.1.0",
+    "eslint-plugin-promise": "^3.7.0",
+    "eslint-plugin-react": "^7.7.0",
+    "webpack": "^3.11.0",
+    "webpack-node-externals": "^1.6.0"
+  },
+  "homepage": "http://www.oknosoft.ru/zd/",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oknosoft/windowbuilder-subscriber.git"
+  }
+}
